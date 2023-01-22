@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #b9b6b6; 
+    color: #0f141e;
+
+    /*font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;*/
+
+    font: normal 16px 'Roboto', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+
+}
+
+a:visited {
+    color: grey;
+}
+
+.avatar {
+    min-width: 200px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(65, 62, 62);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 700px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+}
+
+.info div {
+    width: 50%;
+}
+
+.info p {
+    color: #86898f;
+    margin: 0;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    /* text-transform: lowercase; */
+    /* letter-spacing: 5px; */
+    /* word-spacing: 10px; */
+}
+
+/* Box model */
+
+.container {
+    max-width: 1000px; /*max-width - максимальная ширина сайта 1000px, для адаптации под любые устройства, ширина страницы у которых меньше*/
+    margin: auto; /*определяет внешний отступ на всех четырех сторонах элемента (в нашем случае в container весь контент сайта)*/
+    padding-top: 40px;
+}
+
+
+/* #connection-head {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px; */
+/* } */
+
+.box-model > div {
+    float: left;
+    background: #40598f;
+    height: 150px;
+    width: 50%;
+    border-left: 50px;
+    border-right: 50px;
+    box-sizing: border-box;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-red {
+    background: #ffe5e5;
+}
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h3 {
+    /* margin-bottom: 10px; */
+}
+
+.list {
+    padding: 0px 20px;
+
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    /* margin-bottom: 10px; */
+    padding-bottom: 10px;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color:#5b5e65;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-family: inherit;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.row > .form-group {
+    width: 50%;
+
+}
+
+.row > .form-group:first-child {
+    margin-right: 20px;
+}
+
+.btn {
+    color: #111;
+    padding: 15px 20px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
